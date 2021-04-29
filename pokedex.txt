@@ -1,0 +1,41 @@
+
+
+SELECT * FROM tabela
+SELECT AVG(*) FROM tabela WHERE 1
+SELECT COUNT(*) FROM tabela WHERE 1
+INSERT INTO tabela(coluna, coluna2) VALUES (valor, valor)
+UPDATE tabela SET coluna = valor WHERE 1
+
+1) Qual o ID do pokemon Lucario?
+SELECT * FROM `pokedex`WHERE nome = 'Lucario'
+numero dele é 448
+
+
+2) Qual a média de altura dos pokemons que são lendarios?
+media de altura 22.8116
+SELECT AVG(altura) FROM pokedex WHERE lendario = 1
+
+
+3) Quais pokemons são mais pesados pela média: os dos tipos rock ou do tipo stell?
+stell com a media de 1471.3696
+
+4) Traduzir os tipos dos pokemons.
+UPDATE 'pokedex' SET tipo2 = 'planta' WHERE tipo2 = 'grass';
+UPDATE `pokedex` SET tipo2 = 'venenoso' WHERE tipo2 = 'poison';
+UPDATE `pokedex` SET tipo1 = 'fogo' WHERE tipo1 = 'fire'
+UPDATE `pokedex` SET tipo1 = 'voador' WHERE tipo1 = 'flying'
+UPDATE `pokedex` SET tipo1 = 'água' WHERE tipo1 = 'water'
+
+5) Qual a média de altura dos pokemons que são lendarios?
+media de altura 22.8116
+SELECT AVG(altura) FROM pokedex WHERE lendario = 1
+
+
+6) Utilizando o site https://serebii.net/pokedex-swsh/ encontre os pokemon com os IDs 80, 122, 149 e insira-os na tabela.
+SELECT * FROM `pokedex` WHERE nome = "slowbro"
+SELECT * FROM `pokedex` WHERE nome = "mr.mime"
+SELECT * FROM `pokedex` WHERE nome = "dragonite"
+
+
+
+
